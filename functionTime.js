@@ -76,3 +76,15 @@ const people =
     return sum + Number(person.age);
  }, 0);
  console.log(totalAge);
+
+ function incrementAge(person){
+    if(person.age === undefined){
+        person.age =0;
+    }
+    person.age = person.age + 1;
+  
+}
+//Reflection
+
+//a lot of my previous assignments could be improved by turning parts of it into fucntions 
+//knowing what i have learned about functions and array methods, i could probably make it so the code isnt as long

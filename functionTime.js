@@ -25,3 +25,20 @@ function longestString(strings){
     return longest;
 }
 console.log(longestString(["Eevee", "Pikachu", "Rockruff"]));
+
+//'IM TIRED OF THIS GRANDPA' 'THATS TOO DANG BAD'
+
+
+//take an array of strings, and a number, and return an array of the strings that are longer then the given number... uh. hm
+
+function stringsLongerThanNum(strings, number){
+    let longerStrings = [];
+
+    for(let i = 0; i < strings.length; i++){
+        if(strings[i].length > number){
+            longerStrings.push(strings[i]);
+        }
+    }
+    return longerStrings;
+}
+console.log(stringsLongerThanNum(["Why", "Must", "I", "SUFFER"], 3));

@@ -57,3 +57,7 @@ const people =
  });
 
  console.log(sortedPeople);
+
+ const filteredPeople = people.filter(function(person){
+    return Number(person.age) <= 50;
+ });

@@ -61,3 +61,13 @@ const people =
  const filteredPeople = people.filter(function(person){
     return Number(person.age) <= 50;
  });
+
+ const updatedPeople = people.map(function(person){//map is going through the objects
+    return {
+        id: person.id,
+        name: person.name,
+        job: person.occupation,
+        age: Number(person.age) + 1
+    };
+ });
+ console.log(updatedPeople);

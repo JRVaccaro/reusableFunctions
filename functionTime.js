@@ -71,3 +71,8 @@ const people =
     };
  });
  console.log(updatedPeople);
+
+ const totalAge = people.reduce(function(sum, person){
+    return sum + Number(person.age);
+ }, 0);
+ console.log(totalAge);
